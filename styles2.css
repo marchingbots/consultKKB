@@ -234,3 +234,52 @@ h4, .h4 {
   background-repeat: no-repeat;
   cursor: pointer;
 }
+
+
+/* ======================================
+   DESKTOP SNAP SYSTEM ( ≥ 992px )
+   Stable version – footer scrollable
+====================================== */
+
+@media (min-width: 992px) {
+
+  /* Softer snapping — no bounce */
+  html {
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+  }
+
+  /* Brand hero behaves normally */
+  .desktop-brand-hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Only service heroes snap */
+  .snap-section {
+    scroll-snap-align: start;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-desktop {
+    background-color: #212529;
+  }
+
+}
+
+/* Desktop hero CTA button */
+.contact-btn {
+  border-radius: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #fff;
+  color: #212529;
+}
