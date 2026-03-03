@@ -1,0 +1,236 @@
+/* ======================================
+   GLOBAL TYPOGRAPHY
+====================================== */
+
+html,
+body {
+  background-color: #212529;
+  color: #fff;
+font-family: 'Inter', system-ui, -apple-system, "Segoe UI", sans-serif;
+  letter-spacing: -0.005em;
+}
+
+/* ======================================
+   NAV
+====================================== */
+
+.nav-link {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+  color: #fff;
+}
+
+/* ======================================
+   HERO SYSTEM
+====================================== */
+
+.hero-heading {
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+/* Brand Name */
+.brand-block {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+/* Logo scaling */
+.brand-logo {
+  width: 60px;
+  height: auto;
+  opacity: 0.9;
+}
+
+.hero-brand {
+  font-weight: 600;       /* Strong, confident */
+  letter-spacing: -0.01em;
+}
+
+.hero-tagline {
+  font-weight: 300;       /* Light, refined */
+  opacity: 0.9;
+}
+
+/* ======================================
+   RESPONSIVE TYPOGRAPHY SCALE
+====================================== */
+
+/* Mobile */
+@media (max-width: 575.98px) {
+
+  .hero-heading {
+    font-size: 1.75rem;
+    font-weight: 400;
+  }
+
+  .brand-logo {
+    width: 40px;
+  }
+}
+@media (max-width: 575.98px) {
+
+  .hero-brand {
+    font-weight: 600;
+  }
+
+  .hero-tagline {
+    font-weight: 400;  /* Slightly heavier for small screens */
+  }
+}
+
+/* Tablet */
+@media (min-width: 576px) and (max-width: 991.98px) {
+
+  .hero-heading {
+    font-size: 2.25rem;
+  }
+
+  .brand-logo {
+    width: 50px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+
+  .hero-heading {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+
+  .brand-logo {
+    width: 70px;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+
+  .hero-heading {
+    font-size: 3.5rem;
+  }
+
+  .brand-logo {
+    width: 80px;
+  }
+}
+
+
+/* ======================================
+   HEADING SYSTEM
+====================================== */
+
+h1, .h1 {
+  font-weight: 300;
+}
+
+h2, .h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: -0.015em;
+}
+
+h3, .h3 {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+h4, .h4 {
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Scale up on desktop */
+@media (min-width: 992px) {
+  h2 { font-size: 2.5rem; }
+  h3 { font-size: 1.5rem; }
+}
+
+
+/* intro screen */
+
+#intro-screen {
+  position: fixed;
+  inset: 0;
+  background-color: #212529;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 600;
+  z-index: 9999;
+  letter-spacing: -0.02em;
+  transition: opacity 0.8s ease;
+}
+
+/* Hero card background behavior */
+.hero-card {
+  min-height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Optional subtle dark overlay */
+.hero-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)); */
+}
+
+.hero-card > div {
+  position: relative;
+  z-index: 1;
+}
+
+/* Make entire hero cards clickable */
+.hero-card {
+  cursor: pointer;
+}
+
+/* HERO BACKGROUNDS */
+.hero-1 {
+  background-image: url('/unsplash-photo-1.jpg');
+}
+
+.hero-2 {
+  background-image: url('/unsplash-photo-2.jpg');
+}
+
+.hero-3 {
+  background-image: url('/unsplash-photo-3.jpg');
+}
+
+.hero-4 {
+  background-image: url('/unsplash-photo-3.jpg');
+}
+
+.hero-5 {
+  background-image: url('/unsplash-photo-3.jpg');
+}
+
+/* Ensure background behaves properly */
+.hero-card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
