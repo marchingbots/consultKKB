@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aktivitas Rekrutmen – Kapan Kita Bersama Privasi">
+  <meta name="robots" content="index, follow">
+  <title>Aktivitas Rekrutmen | Kapan Kita Bersama</title>
+  <link rel="icon" href="KKBlogo.png" type="image/png">
+  <link rel="canonical" href="https://kapankitabersama.com/recruitment-activities-id.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles2.css">
+  <style>
+    footer { background-color: #212529 !important; }
+
+    /* Lang bar */
+    .lang-bar {
+      background: rgba(255,255,255,0.03);
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      padding: 0.6rem 0;
+    }
+    .lang-bar .inner {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em;
+    }
+    .lang-bar .lang-label { opacity: 0.35; font-weight: 500; }
+    .lang-btn {
+      padding: 0.2rem 0.65rem; font-size: 0.68rem; letter-spacing: 0.08em;
+      text-transform: uppercase; border-radius: 2px;
+      border: 1px solid rgba(255,255,255,0.15); background: transparent;
+      color: rgba(255,255,255,0.5); cursor: pointer; transition: all 0.15s;
+      text-decoration: none; display: inline-block;
+    }
+    .lang-btn.active, .lang-btn:hover { border-color: rgba(255,255,255,0.5); color: #fff; }
+    .lang-btn.active { background: rgba(255,255,255,0.06); }
+    .lang-divider { opacity: 0.2; font-size: 0.65rem; }
+
+    /* Hero */
+    .sub-hero {
+      padding: 6rem 0 3rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .breadcrumb-trail {
+      font-size: 0.7rem; text-transform: uppercase;
+      letter-spacing: 0.14em; opacity: 0.4; font-weight: 500; margin-bottom: 1rem;
+    }
+    .breadcrumb-trail a {
+      color: rgba(255,255,255,0.5); text-decoration: none; transition: color .15s;
+    }
+    .breadcrumb-trail a:hover { color: #fff; }
+    .breadcrumb-trail span { margin: 0 0.45rem; opacity: 0.3; }
+    .sub-hero h1 {
+      font-size: clamp(1.6rem, 5vw, 2.75rem);
+      font-weight: 300; letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 0;
+    }
+
+    /* Content */
+    .sub-content { padding: 3.5rem 0 5rem; }
+    .sub-content h2 {
+      font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.12em; color: rgba(255,255,255,0.5);
+      margin-top: 2.5rem; margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .sub-content h2:first-child { margin-top: 0; }
+    .sub-content p {
+      font-size: 0.925rem; line-height: 1.85;
+      color: rgba(255,255,255,0.65); margin-bottom: 0.9rem;
+    }
+    .sub-content ul { padding-left: 1.15rem; margin-bottom: 0.9rem; }
+    .sub-content ul li {
+      font-size: 0.925rem; line-height: 1.8;
+      color: rgba(255,255,255,0.65); margin-bottom: 0.3rem;
+    }
+    .inline-link {
+      color: rgba(255,255,255,0.75); text-decoration: underline;
+      text-decoration-color: rgba(255,255,255,0.25);
+      text-underline-offset: 3px; transition: color .15s;
+    }
+    .inline-link:hover { color: #fff; }
+    .back-link {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em;
+      color: rgba(255,255,255,0.35); text-decoration: none;
+      margin-top: 3rem; transition: color .15s;
+    }
+    .back-link:hover { color: #fff; }
+
+    /* Mobile (<992px) */
+    @media (max-width: 991.98px) {
+      .sub-hero { padding: 4.5rem 0 2.25rem; }
+      .sub-content { padding: 2.5rem 0 4rem; }
+      .sub-content h2 { margin-top: 2rem; }
+    }
+    @media (max-width: 575.98px) {
+      .sub-hero { padding: 3.5rem 0 2rem; }
+    }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100 text-white bg-dark">
+<!-- LANG BAR -->
+<div class="lang-bar">
+  <div class="container">
+    <div class="inner">
+      <span class="lang-label">Bahasa</span>
+      <a href="#" class="lang-btn" id="en-link">English</a>
+      <span class="lang-divider">|</span>
+      <a href="#" class="lang-btn active" id="id-link">Bahasa Indonesia</a>
+    </div>
+  </div>
+</div>
+<header class="py-3">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark px-0" aria-label="Navigasi utama">
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0 gap-lg-5 text-center">
+          <li class="nav-item"><a class="nav-link" href="/index.html#power-of-attorney">Layanan Surat Kuasa</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index.html#executor">Layanan Eksekutor</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index.html#consulting">Layanan Konsultasi</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index.html#leadership">Kepemimpinan</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index.html#accountability">Akuntabilitas</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<section class="sub-hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 offset-lg-2">
+        <p class="breadcrumb-trail">
+          <a href="/privacy-id.html">Pernyataan Privasi</a>
+          <span>›</span>Aktivitas Rekrutmen
+        </p>
+        <h1>Aktivitas Rekrutmen</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<main class="flex-fill sub-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 offset-lg-2">
+        
+    <h2>Ikhtisar</h2>
+    <p>Bagian ini menjelaskan mengapa dan bagaimana kami mengumpulkan dan menggunakan data pribadi sehubungan dengan aktivitas rekrutmen kami.</p>
+    <p>Jika lamaran Anda berhasil, kami melakukan pemeriksaan penyaringan pra-kerja sebagai bagian dari proses orientasi kami. Tergantung pada peran yang Anda lamar, pemeriksaan ini mungkin termasuk pemeriksaan catatan kriminal.</p>
+
+    <h2>Pengumpulan Data Pribadi</h2>
+    <p>Sebagian besar data pribadi yang kami kumpulkan sebagai bagian dari proses rekrutmen kami diberikan oleh Anda, seperti:</p>
+    <ul>
+      <li>Detail kontak (nama, email, nomor telepon);</li>
+      <li>Bidang minat;</li>
+      <li>Nama pengguna dan kata sandi untuk melamar suatu peran;</li>
+      <li>CV, pengalaman, pendidikan, kualifikasi akademik dan profesional;</li>
+      <li>Informasi yang diberikan sebagai bagian dari wawancara dan penilaian;</li>
+      <li>Data keragaman dan kesetaraan kesempatan;</li>
+      <li>Informasi penyaringan pra-kerja jika lamaran Anda berhasil;</li>
+      <li>Informasi tentang hubungan keuangan Anda dan keluarga dekat Anda jika lamaran Anda berhasil; dan</li>
+      <li>Detail rekening bank jika lamaran Anda berhasil.</li>
+    </ul>
+    <p>Kami juga membuat data pribadi sehubungan dengan aktivitas perekrutan seperti hasil dan umpan balik wawancara dan penilaian, serta detail penawaran.</p>
+    <p>Kami juga dapat memperoleh data pribadi dari sumber pihak ketiga seperti referensi dari pemberi referensi yang Anda sebutkan, hasil pemeriksaan penyaringan, verifikasi informasi yang diberikan selama proses perekrutan, dan informasi dari situs media sosial tentang keterlibatan Anda dengan kampanye perekrutan kami.</p>
+
+    <h2>Penggunaan Data Pribadi</h2>
+    <p>Kami memproses data pribadi untuk kepentingan sah kami dalam menarik dan mengamankan talenta terbaik, termasuk:</p>
+    <ul>
+      <li>Untuk menarik talenta dan peluang pasar di KKB termasuk dengan mengatur dan menyelenggarakan acara, peluang pemasaran dan periklanan, serta menggunakan perekrut;</li>
+      <li>Untuk mengidentifikasi dan mencari talenta termasuk dengan mencari di kumpulan talenta kami dan sumber yang tersedia untuk umum seperti jejaring profesional dan situs web pekerjaan;</li>
+      <li>Untuk memproses dan mengelola lamaran untuk peran di KKB, mengevaluasi Anda untuk posisi terbuka, mengelola profil kandidat Anda, mengirimkan pemberitahuan email, dan menghubungi Anda tentang pencalonan Anda;</li>
+      <li>Untuk menyaring dan memilih talenta dengan mengevaluasi kesesuaian Anda untuk bekerja di KKB, termasuk melalui wawancara, penilaian, dan pemeriksaan latar belakang;</li>
+      <li>Untuk merekrut dan menerima talenta dengan memberikan tawaran kepada pelamar yang berhasil dan melakukan pemeriksaan pra-kerja;</li>
+      <li>Untuk melakukan analisis statistik dan membuat laporan mengenai penggunaan situs web karier kami, analisis demografis kandidat, dan analisis saluran pencarian kandidat; dan</li>
+      <li>Untuk mengelola dan mengatur situs web karier kami dan berkomunikasi dengan Anda tentang karier di KKB.</li>
+    </ul>
+    <p>Jika diizinkan oleh hukum, kami melakukan pemeriksaan catatan kriminal untuk mematuhi kewajiban hukum guna memastikan seseorang memenuhi syarat untuk bekerja, atau untuk menetapkan apakah seorang pelamar telah melakukan tindakan yang melanggar hukum atau terlibat dalam ketidakjujuran, malpraktik, atau perilaku tidak pantas lainnya.</p>
+
+    <h2>Penyimpanan Data</h2>
+    <p>Jika lamaran Anda berhasil, kami menyimpan data pribadi yang relevan sebagai bagian dari catatan karyawan Anda.</p>
+    <p>Jika lamaran Anda tidak berhasil, kami akan menyimpan dan menggunakan informasi yang Anda berikan kepada KKB untuk jangka waktu yang wajar guna menangani setiap masalah yang mungkin timbul sehubungan dengan lamaran Anda, untuk tujuan menghubungi Anda terkait peluang kerja lain, dan untuk tujuan bisnis kami yang sah.</p>
+    
+        <a href="/privacy-id.html" class="back-link">← Kembali ke Pernyataan Privasi</a>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="py-4" style="background-color:#212529;">
+  <div class="container">
+    <ul class="nav justify-content-center flex-column flex-md-row text-center gap-2 gap-md-4">
+      <li class="nav-item"><a href="/index.html" class="nav-link">Tentang</a></li>
+      <li class="nav-item"><a href="/privacy-id.html" class="nav-link">Privasi</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Legal</a></li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" id="footer-contact-link"
+           data-user="info" data-domain="kapankitabersama" data-tld="com">Kontak</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    /* Footer email */
+    var l = document.getElementById("footer-contact-link");
+    if (l) {
+      l.addEventListener("click", function (e) {
+        e.preventDefault();
+        var a = document.createElement("a");
+        a.href = "mailto:" + this.dataset.user + "@" + this.dataset.domain + "." + this.dataset.tld;
+        a.click();
+      });
+    }
+    /* Lang switcher — swap -id suffix to find EN counterpart */
+    var enLink = document.getElementById("en-link");
+    if (enLink) {
+      var enHref = window.location.pathname.replace(/-id\.html$/, ".html").replace(/\/privacy-id\.html$/, "/privacy.html");
+      enLink.href = enHref;
+    }
+  });
+</script>
+</body></html>

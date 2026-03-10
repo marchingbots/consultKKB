@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pernyataan Privasi – Kapan Kita Bersama. Pelajari bagaimana KKB mengumpulkan, menggunakan, dan melindungi data pribadi Anda.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Pernyataan Privasi | Kapan Kita Bersama">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kapankitabersama.com/privacy-id.html">
+  <meta property="og:image" content="https://kapankitabersama.com/KKBlogo.png">
+  <title>Pernyataan Privasi | Kapan Kita Bersama</title>
+  <link rel="icon" href="KKBlogo.png" type="image/png">
+  <link rel="canonical" href="https://kapankitabersama.com/privacy-id.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles2.css">
+
+  <style>
+    footer { background-color: #212529 !important; }
+
+    /* ── Language bar ── */
+    .lang-bar {
+      background: rgba(255,255,255,0.03);
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      padding: 0.6rem 0;
+    }
+    .lang-bar .inner {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em;
+    }
+    .lang-bar .lang-label { opacity: 0.35; font-weight: 500; }
+    .lang-btn {
+      padding: 0.2rem 0.65rem; font-size: 0.68rem; letter-spacing: 0.08em;
+      text-transform: uppercase; border-radius: 2px;
+      border: 1px solid rgba(255,255,255,0.15); background: transparent;
+      color: rgba(255,255,255,0.5); cursor: pointer; transition: all 0.15s;
+      text-decoration: none; display: inline-block;
+    }
+    .lang-btn.active, .lang-btn:hover { border-color: rgba(255,255,255,0.5); color: #fff; }
+    .lang-btn.active { background: rgba(255,255,255,0.06); }
+    .lang-divider { opacity: 0.2; font-size: 0.65rem; }
+
+    /* ── Hero ── */
+    .privacy-hero {
+      padding: 5.5rem 0 3rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .privacy-hero .label {
+      font-size: 0.68rem; text-transform: uppercase;
+      letter-spacing: 0.14em; opacity: 0.35; font-weight: 500; margin-bottom: 1rem;
+    }
+    .privacy-hero h1 {
+      font-size: clamp(1.75rem, 5vw, 3.25rem);
+      font-weight: 300; letter-spacing: -0.025em; line-height: 1.1; margin-bottom: 0.85rem;
+    }
+    .privacy-hero .updated { font-size: 0.75rem; opacity: 0.35; letter-spacing: 0.04em; }
+
+    /* ── TOC ── */
+    .toc-sticky { position: sticky; top: 2rem; }
+    .toc-label {
+      font-size: 0.62rem; text-transform: uppercase;
+      letter-spacing: 0.14em; opacity: 0.35; font-weight: 600; margin-bottom: 0.85rem;
+    }
+    .toc-list { list-style: none; padding: 0; margin: 0; }
+    .toc-list li {
+      border-left: 1px solid rgba(255,255,255,0.1); transition: border-color 0.2s;
+    }
+    .toc-list li.active { border-left-color: rgba(255,255,255,0.65); }
+    .toc-list a {
+      display: block; padding: 0.3rem 0.85rem; font-size: 0.72rem;
+      color: rgba(255,255,255,0.38); text-decoration: none;
+      letter-spacing: 0.02em; line-height: 1.5; transition: color 0.15s;
+    }
+    .toc-list a:hover, .toc-list li.active a { color: #fff; }
+
+    /* ── Content ── */
+    .privacy-content { padding: 3.5rem 0 5.5rem; }
+    .privacy-section { margin-bottom: 4rem; scroll-margin-top: 1.5rem; }
+    .section-label {
+      font-size: 0.62rem; text-transform: uppercase;
+      letter-spacing: 0.14em; opacity: 0.28; font-weight: 600;
+      margin-bottom: 0.6rem; display: block;
+    }
+    .privacy-section h2 {
+      font-size: clamp(1.1rem, 3vw, 1.6rem); font-weight: 300;
+      letter-spacing: -0.015em; margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .privacy-section h3 {
+      font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.1em; margin-top: 1.75rem; margin-bottom: 0.7rem;
+      color: rgba(255,255,255,0.75);
+    }
+    .privacy-section p {
+      font-size: 0.925rem; line-height: 1.85;
+      color: rgba(255,255,255,0.62); margin-bottom: 0.9rem;
+    }
+    .privacy-section ul { padding-left: 1.15rem; margin-bottom: 0.9rem; }
+    .privacy-section ul li {
+      font-size: 0.925rem; line-height: 1.8;
+      color: rgba(255,255,255,0.62); margin-bottom: 0.3rem;
+    }
+
+    /* ── Activities grid ── */
+    .activities-grid {
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 5px; overflow: hidden; margin-top: 1.25rem;
+    }
+    .activity-link {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0.85rem 1.15rem; font-size: 0.82rem;
+      color: rgba(255,255,255,0.55); text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      letter-spacing: 0.01em; transition: background 0.15s, color 0.15s;
+    }
+    .activity-link:last-child { border-bottom: none; }
+    .activity-link:hover { background: rgba(255,255,255,0.04); color: #fff; }
+    .activity-link .arrow {
+      opacity: 0.25; font-size: 0.8rem; flex-shrink: 0; margin-left: 1rem;
+      transition: opacity 0.15s, transform 0.15s;
+    }
+    .activity-link:hover .arrow { opacity: 0.8; transform: translateX(3px); }
+
+    /* ── Rights list ── */
+    .rights-list { list-style: none; padding: 0; margin: 1.25rem 0 0; }
+    .rights-list li {
+      padding: 0.9rem 1.1rem; border-left: 2px solid rgba(255,255,255,0.12);
+      margin-bottom: 0.85rem; font-size: 0.9rem; line-height: 1.75;
+      color: rgba(255,255,255,0.62); background: rgba(255,255,255,0.02);
+    }
+    .rights-list li strong {
+      display: block; color: rgba(255,255,255,0.88); font-weight: 500;
+      margin-bottom: 0.3rem; font-size: 0.72rem;
+      text-transform: uppercase; letter-spacing: 0.08em;
+    }
+
+    /* ── Contact block ── */
+    .contact-block {
+      background: rgba(255,255,255,0.025);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 6px; padding: 1.75rem; margin-top: 1.25rem;
+    }
+    .contact-block p { margin-bottom: 0.45rem; }
+    .contact-block a { color: rgba(255,255,255,0.75); text-decoration: none; }
+    .contact-block a:hover { color: #fff; }
+
+    /* ── Inline links ── */
+    .inline-link {
+      color: rgba(255,255,255,0.72); text-decoration: underline;
+      text-decoration-color: rgba(255,255,255,0.22);
+      text-underline-offset: 3px; transition: color .15s;
+    }
+    .inline-link:hover { color: #fff; }
+
+    /* ── Divider ── */
+    .section-divider {
+      border: none; border-top: 1px solid rgba(255,255,255,0.05);
+      margin: 0 0 4rem;
+    }
+
+    /* ── Mobile (<992px) ── */
+    @media (max-width: 991.98px) {
+      .toc-sticky { display: none; }
+      .privacy-hero { padding: 4rem 0 2.5rem; }
+      .privacy-content { padding: 2.5rem 0 4rem; }
+      .privacy-section { margin-bottom: 3rem; }
+      .section-divider { margin-bottom: 3rem; }
+    }
+    @media (max-width: 575.98px) {
+      .privacy-hero { padding: 3rem 0 2rem; }
+      .activity-link { font-size: 0.78rem; padding: 0.75rem 1rem; }
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100 text-white bg-dark">
+
+  <!-- LANGUAGE BAR -->
+  <div class="lang-bar">
+    <div class="container">
+      <div class="inner">
+        <span class="lang-label">Bahasa</span>
+        <a href="/privacy.html" class="lang-btn">English</a>
+        <span class="lang-divider">|</span>
+        <a href="/privacy-id.html" class="lang-btn active">Bahasa Indonesia</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="py-3">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark px-0" aria-label="Navigasi utama">
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0 gap-lg-5 text-center">
+            <li class="nav-item"><a class="nav-link" href="/index.html#power-of-attorney">Layanan Surat Kuasa</a></li>
+            <li class="nav-item"><a class="nav-link" href="/index.html#executor">Layanan Eksekutor</a></li>
+            <li class="nav-item"><a class="nav-link" href="/index.html#consulting">Layanan Konsultasi</a></li>
+            <li class="nav-item"><a class="nav-link" href="/index.html#leadership">Kepemimpinan</a></li>
+            <li class="nav-item"><a class="nav-link" href="/index.html#accountability">Akuntabilitas</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="privacy-hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 offset-lg-2">
+          <p class="label">Legal</p>
+          <h1>Pernyataan Privasi</h1>
+          <p class="updated">Terakhir diperbarui: 8 Maret 2026 &nbsp;·&nbsp; Versi Bahasa Indonesia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+  <main class="flex-fill privacy-content">
+    <div class="container">
+      <div class="row">
+
+        <!-- TOC desktop -->
+        <div class="col-lg-2 offset-lg-1 d-none d-lg-block">
+          <nav class="toc-sticky" aria-label="Bagian privasi">
+            <p class="toc-label">Isi</p>
+            <ul class="toc-list" id="toc-list">
+              <li><a href="#pendahuluan">Pendahuluan</a></li>
+              <li><a href="#dasar-hukum">Dasar Hukum</a></li>
+              <li><a href="#transfer">Transfer Data</a></li>
+              <li><a href="#pihak-ketiga">Pihak Ketiga</a></li>
+              <li><a href="#pengungkapan">Pengungkapan Lain</a></li>
+              <li><a href="#hak-anda">Hak Anda</a></li>
+              <li><a href="#aktivitas-pemrosesan">Aktivitas Pemrosesan</a></li>
+              <li><a href="#perubahan">Perubahan</a></li>
+              <li><a href="#hubungi">Hubungi Kami</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="col-12 col-lg-7 offset-lg-1">
+
+          <!-- 01 Pendahuluan -->
+          <section class="privacy-section" id="pendahuluan">
+            <span class="section-label">01</span>
+            <h2>Pendahuluan</h2>
+            <p>Kapan Kita Bersama sangat berkomitmen untuk melindungi data pribadi. Pernyataan privasi ini menjelaskan mengapa dan bagaimana kami mengumpulkan dan menggunakan data pribadi serta memberikan informasi tentang hak-hak individu terkait data pribadi. Pernyataan ini berlaku untuk data pribadi yang diberikan kepada kami, baik oleh individu itu sendiri maupun oleh pihak lain.</p>
+            <p>Sebagaimana digunakan dalam pernyataan privasi ini, "Kapan Kita Bersama", "KKB", "kami" merujuk kepada PT KAPAN KITA BERSAMA dan pemasok, kontraktor, subkontraktor, dan vendor pihak ketiga yang dapat memproses informasi pribadi Anda. Setiap pelaku bisnis adalah entitas hukum yang terpisah. Pengontrol data utama informasi pribadi Anda adalah KKB. Tidak ada informasi pribadi yang dibagikan oleh KKB kepada pihak lain tanpa persetujuan tertulis sebelumnya dari individu yang bersangkutan.</p>
+            <p>Pernyataan privasi ini mengatur pengumpulan, penggunaan, dan pengungkapan data pribadi oleh KKB, dan menjelaskan bagaimana kami mematuhi persyaratan hukum perlindungan data pribadi yang berlaku di Indonesia dan peraturan terkaitnya.</p>
+            <p>Untuk mengetahui lebih lanjut tentang aktivitas pemrosesan spesifik kami, kunjungi <a href="#aktivitas-pemrosesan" class="inline-link">aktivitas pemrosesan kami</a>.</p>
+          </section>
+
+          <hr class="section-divider">
+
+          <!-- 02 Dasar Hukum -->
+          <section class="privacy-section" id="dasar-hukum">
+            <span class="section-label">02</span>
+            <h2>Dasar Hukum Kami untuk Memproses Data Pribadi Anda</h2>
+            <p>Hukum setempat Anda mungkin mengharuskan kami untuk menjelaskan dasar hukum yang kami andalkan untuk memproses informasi pribadi Anda. Dalam kasus tersebut, kami mengandalkan satu atau lebih dari kondisi pemrosesan berikut:</p>
+            <ul>
+              <li>Anda memverifikasi data pribadi dan menyetujui pengumpulan dan penggunaannya untuk penyampaian informasi dan layanan yang efektif kepada Anda dan dalam pengoperasian bisnis kami yang efektif dan sah;</li>
+              <li>Mengembangkan dan meningkatkan bisnis, layanan, dan penawaran kami serta mengembangkan teknologi dan penawaran KKB baru (dengan ketentuan bahwa hal ini tidak mengganggu hak Anda);</li>
+              <li>Untuk memenuhi persyaratan hukum, peraturan, atau badan profesional tempat kami menjadi anggota; atau</li>
+              <li>Untuk melaksanakan kewajiban kami berdasarkan perjanjian kontrak dengan Anda.</li>
+            </ul>
+            <h3>Pelaksanaan tujuan di atas dapat mencakup</h3>
+            <ul>
+              <li>Memberikan layanan kepada Anda</li>
+              <li>Tujuan perekrutan</li>
+              <li>Berpartisipasi dalam inisiatif "bergabung dengan daftar email kami"</li>
+              <li>Menghubungi kami untuk informasi lebih lanjut</li>
+              <li>Tujuan administrasi internal</li>
+              <li>Mengikuti Survei Cepat, Kuis, atau Survei Tolok Ukur</li>
+              <li>Mendaftar untuk acara dan konferensi</li>
+              <li>Mendistribusikan materi referensi yang diminta</li>
+              <li>Berlangganan buletin atau mengunduh dokumen dan publikasi</li>
+              <li>Memelihara operasi kami atau sistem manajemen hubungan klien</li>
+              <li>Tujuan pemasaran</li>
+            </ul>
+          </section>
+
+          <hr class="section-divider">
+
+          <!-- 03 Transfer -->
+          <section class="privacy-section" id="transfer">
+            <span class="section-label">03</span>
+            <h2>Transfer Data Pribadi</h2>
+            <h3>Transfer lintas batas</h3>
+            <p>Jika kami memproses informasi pribadi Anda, informasi pribadi Anda dapat ditransfer ke dan disimpan di luar negara tempat Anda berada. Ini termasuk negara-negara di luar Wilayah Ekonomi Eropa (EEA) dan negara-negara yang tidak memiliki undang-undang yang memberikan perlindungan khusus untuk informasi pribadi.</p>
+            <p>Jika kami mengumpulkan informasi pribadi Anda di dalam EEA, transfer ke luar EEA hanya akan dilakukan ke penerima yang berlokasi di negara yang memberikan tingkat perlindungan yang memadai, atau berdasarkan perjanjian yang memenuhi persyaratan Uni Eropa seperti klausul kontrak standar yang disetujui oleh Komisi Eropa.</p>
+            <p>Untuk klien kami di Swiss dan Amerika, KKB mematuhi Kerangka Kerja Perlindungan Privasi Uni Eropa-AS dan Kerangka Kerja Perlindungan Privasi Swiss-AS sebagaimana ditetapkan oleh Departemen Perdagangan AS.</p>
+          </section>
+
+          <hr class="section-divider">
+
+          <!-- 04 Pihak Ketiga -->
+          <section class="privacy-section" id="pihak-ketiga">
+            <span class="section-label">04</span>
+            <h2>Penyedia Pihak Ketiga</h2>
+            <p>Kami dapat mentransfer atau mengungkapkan data pribadi yang kami kumpulkan kepada kontraktor pihak ketiga, subkontraktor, dan/atau anak perusahaan serta afiliasinya. Pihak ketiga mendukung KKB dalam menyediakan layanannya dan membantu menyediakan, menjalankan, dan mengelola sistem TI. Contoh kontraktor pihak ketiga yang kami gunakan adalah penyedia manajemen identitas, hosting dan manajemen situs web, analisis data, pencadangan data, keamanan, dan layanan penyimpanan cloud.</p>
+            <p>Kebijakan kami adalah hanya menggunakan penyedia pihak ketiga yang terikat untuk menjaga tingkat keamanan dan kerahasiaan yang sesuai, memproses informasi pribadi hanya sesuai instruksi KKB, dan meneruskan kewajiban yang sama kepada sub-prosesor mereka.</p>
+          </section>
+
+          <hr class="section-divider">
+
+          <!-- 05 Pengungkapan -->
+          <section class="privacy-section" id="pengungkapan">
+            <span class="section-label">05</span>
+            <h2>Pengungkapan Lainnya</h2>
+            <p>Kami juga dapat mengungkapkan informasi pribadi dalam keadaan berikut:</p>
+            <ul>
+              <li>Dengan penasihat profesional, misalnya firma hukum, sebagaimana diperlukan untuk menetapkan, menjalankan, atau membela hak hukum kami;</li>
+              <li>Ketika secara eksplisit diminta oleh Anda;</li>
+              <li>Ketika diperlukan untuk mengirimkan publikasi atau materi referensi yang diminta oleh Anda;</li>
+              <li>Ketika diperlukan untuk memfasilitasi konferensi atau acara yang diselenggarakan oleh pihak ketiga; dan</li>
+              <li>Kepada penegak hukum, badan pengatur dan badan pemerintah lainnya serta badan profesional, sebagaimana dipersyaratkan oleh dan/atau sesuai dengan hukum atau peraturan yang berlaku.</li>
+            </ul>
+          </section>
+
+          <hr class="section-divider">
+
+          <!-- 06 Hak Anda -->
+          <section class="privacy-section" id="hak-anda">
+            <span class="section-label">06</span>
+            <h2>Hak Hukum Anda Terkait Data Pribadi</h2>
+            <p>Anda mungkin memiliki hak tertentu berdasarkan hukum setempat Anda terkait informasi pribadi yang kami miliki tentang Anda.</p>
+            <ul class="rights-list">
+              <li>
+                <strong>Hak Akses</strong>
+                Memperoleh konfirmasi apakah kami memproses data pribadi Anda, menerima salinan data pribadi Anda, dan memperoleh informasi tentang bagaimana dan mengapa kami memprosesnya.
+              </li>
+              <li>
+                <strong>Hak atas Rektifikasi</strong>
+                Meminta agar data pribadi Anda diubah atau dikoreksi jika tidak akurat (misalnya, jika Anda mengubah alamat Anda) dan untuk melengkapi data pribadi yang tidak lengkap.
+              </li>
+              <li>
+                <strong>Hak untuk Dihapus (Erasure)</strong>
+                Meminta penghapusan data pribadi Anda jika: tidak lagi diperlukan untuk tujuan pengumpulannya; Anda menarik persetujuan; Anda keberatan dan kami tidak memiliki alasan sah yang lebih kuat; Anda keberatan dengan pemrosesan untuk pemasaran langsung; data Anda telah diproses secara tidak sah; atau penghapusan diperlukan untuk mematuhi kewajiban hukum.
+              </li>
+              <li>
+                <strong>Hak untuk Membatasi Pemrosesan</strong>
+                Meminta pembatasan pemrosesan saat kami memverifikasi keakuratan; pemrosesan tidak sah dan Anda lebih memilih pembatasan daripada penghapusan; data diperlukan untuk klaim hukum; atau saat kami memverifikasi apakah dasar hukum kami lebih penting dari kepentingan Anda.
+              </li>
+              <li>
+                <strong>Hak untuk Keberatan</strong>
+                Keberatan terhadap pemrosesan di mana dasar hukum kami adalah kepentingan sah, atau di mana kami memproses untuk tujuan pemasaran langsung.
+              </li>
+              <li>
+                <strong>Hak atas Portabilitas Data</strong>
+                Menerima data pribadi Anda dalam format yang terstruktur dan memiliki hak untuk mengirimkannya ke organisasi lain di mana dasar hukum kami adalah persetujuan atau kebutuhan kontraktual dan pemrosesan dilakukan dengan cara otomatis.
+              </li>
+              <li>
+                <strong>Hak untuk Menarik Persetujuan</strong>
+                Jika kami memproses data pribadi berdasarkan persetujuan, Anda memiliki hak untuk menarik persetujuan kapan saja. Jika Anda menganggap bahwa pemrosesan data pribadi Anda melanggar hukum, Anda mungkin memiliki hak untuk mengajukan pengaduan kepada otoritas pengatur perlindungan data yang relevan.
+              </li>
+            </ul>
+          </section>
+
+          <hr class="section-divider">
+
+          <!-- 07 Aktivitas Pemrosesan -->
+          <section class="privacy-section" id="aktivitas-pemrosesan">
+            <span class="section-label">07</span>
+            <h2>Aktivitas Pemrosesan Kami</h2>
+            <p>Untuk mengetahui lebih lanjut, silakan buka bagian pernyataan ini yang relevan bagi Anda.</p>
+            <div class="activities-grid">
+              <a href="/business-contacts-id.html" class="activity-link">
+                Kontak Bisnis <span class="arrow">→</span>
+              </a>
+              <a href="/corporate-clients-id.html" class="activity-link">
+                Klien Korporat (dan individu yang terkait dengan klien korporat kami) <span class="arrow">→</span>
+              </a>
+              <a href="/personal-clients-id.html" class="activity-link">
+                Klien Pribadi <span class="arrow">→</span>
+              </a>
+              <a href="/websites-id.html" class="activity-link">
+                Individu yang Menggunakan Situs Web Kami <span class="arrow">→</span>
+              </a>
+              <a href="/marketing-activities-id.html" class="activity-link">
+                Aktivitas Pemasaran <span class="arrow">→</span>
+              </a>
+              <a href="/recruitment-activities-id.html" class="activity-link">
+                Pelamar Rekrutmen <span class="arrow">→</span>
+              </a>
+              <a href="/suppliers-id.html" class="activity-link">
+                Pemasok (termasuk subkontraktor dan individu yang terkait dengan pemasok kami) <span class="arrow">→</span>
+              </a>
+              <a href="/kkb-personnel-id.html" class="activity-link">
+                Personel KKB (mitra, staf, dan kontraktor) <span class="arrow">→</span>
+              </a>
+              <a href="/visitors-to-our-offices-id.html" class="activity-link">
+                Pengunjung Kantor Kami <span class="arrow">→</span>
+              </a>
+            </div>
+          </section>
+
+          <hr class="section-divider">
+
+          <!-- 08 Perubahan -->
+          <section class="privacy-section" id="perubahan">
+            <span class="section-label">08</span>
+            <h2>Perubahan pada Pernyataan Privasi Ini</h2>
+            <p>Pernyataan privasi ini terakhir diperbarui pada <strong>8 Maret 2026</strong>.</p>
+            <p>Kami dapat memperbarui pernyataan privasi ini kapan saja dengan menerbitkan versi terbaru di sini. Kami akan mengubah tanggal revisi di bagian atas bagian ini agar Anda tahu kapan kami melakukan perubahan. Kami mendorong Anda untuk meninjau pernyataan privasi ini secara berkala agar tetap mendapat informasi tentang bagaimana kami melindungi informasi Anda.</p>
+          </section>
+
+          <hr class="section-divider">
+
+          <!-- 09 Hubungi -->
+          <section class="privacy-section" id="hubungi">
+            <span class="section-label">09</span>
+            <h2>Hubungi Kami</h2>
+            <p>Beri tahu kami jika Anda ingin berhenti berlangganan dari pemasaran KKB, mengajukan permintaan untuk menggunakan hak hukum terkait data pribadi Anda, atau jika Anda memiliki pertanyaan atau keluhan tentang penanganan data pribadi Anda.</p>
+            <div class="contact-block">
+              <p style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.12em;opacity:0.35;font-weight:600;margin-bottom:1.1rem;">PT Kapan Kita Bersama</p>
+              <p><a href="mailto:info@kapankitabersama.com" class="inline-link">info@kapankitabersama.com</a></p>
+              <p><a href="tel:+6282266691197" class="inline-link">+62 822 666 91197</a></p>
+            </div>
+          </section>
+
+        </div><!-- /col -->
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-4" style="background-color:#212529;">
+    <div class="container">
+      <ul class="nav justify-content-center flex-column flex-md-row text-center gap-2 gap-md-4">
+        <li class="nav-item"><a href="/index.html" class="nav-link">Tentang</a></li>
+        <li class="nav-item"><a href="/privacy-id.html" class="nav-link active" aria-current="page">Privasi</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Legal</a></li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" id="footer-contact-link"
+             data-user="info" data-domain="kapankitabersama" data-tld="com">Kontak</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+    /* TOC active state */
+    (function () {
+      var sections = document.querySelectorAll('.privacy-section[id]');
+      var tocItems = document.querySelectorAll('#toc-list li');
+      function update() {
+        var active = 0;
+        sections.forEach(function (s, i) {
+          if (s.getBoundingClientRect().top <= 90) active = i;
+        });
+        tocItems.forEach(function (li, i) {
+          li.classList.toggle('active', i === active);
+        });
+      }
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    })();
+
+    /* Footer contact */
+    document.addEventListener('DOMContentLoaded', function () {
+      var l = document.getElementById('footer-contact-link');
+      if (l) {
+        l.addEventListener('click', function (e) {
+          e.preventDefault();
+          var a = document.createElement('a');
+          a.href = 'mailto:' + this.dataset.user + '@' + this.dataset.domain + '.' + this.dataset.tld;
+          a.click();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
