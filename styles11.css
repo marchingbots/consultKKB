@@ -1,0 +1,556 @@
+/* ======================================
+
+   GLOBAL TYPOGRAPHY
+
+====================================== */
+
+
+:root {
+
+  --kkb-bg: #212529;
+
+  --kkb-text: #ffffff;
+
+  --kkb-muted: rgba(255, 255, 255, 0.68);
+
+  --kkb-soft: rgba(255, 255, 255, 0.88);
+
+}
+
+
+html,
+
+body {
+
+  min-width: 300px;
+
+  background-color: var(--kkb-bg);
+
+  color: var(--kkb-text);
+
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  letter-spacing: 0;
+
+}
+
+
+body {
+
+  overflow-x: hidden;
+
+}
+
+
+/* ======================================
+
+   NAV / FOOTER LINKS
+
+====================================== */
+
+
+.nav-link {
+
+  padding-inline: 0;
+
+  font-size: 0.78rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+
+  font-weight: 500;
+
+  color: var(--kkb-muted);
+
+}
+
+
+.nav-link:hover,
+
+.nav-link:focus,
+
+.nav-link.active {
+
+  color: var(--kkb-text);
+
+}
+
+
+.site-footer {
+
+  flex-shrink: 0;
+
+}
+
+
+/* ======================================
+
+   HERO SYSTEM
+
+====================================== */
+
+
+.site-main {
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+.brand-hero {
+
+  width: 100%;
+
+  min-height: 82vh;
+
+  padding: 4rem 1rem 3rem;
+
+  background-color: var(--kkb-bg);
+
+}
+
+
+.hero-heading {
+
+  margin-inline: auto;
+
+  font-weight: 300;
+
+  line-height: 1.14;
+
+}
+
+
+.hero-brand {
+
+  font-weight: 600;
+
+  letter-spacing: 0;
+
+  text-wrap: balance;
+
+}
+
+
+.hero-tagline {
+
+  max-width: 34rem;
+
+  margin: 0.8rem auto 0;
+
+  font-weight: 300;
+
+  color: var(--kkb-soft);
+
+  text-wrap: balance;
+
+}
+
+
+.contact-btn {
+
+  min-height: 44px;
+
+  margin-top: 2rem;
+
+  border-radius: 0;
+
+  padding: 0.72rem 1.35rem;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  font-size: 0.78rem;
+
+  font-weight: 500;
+
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
+}
+
+
+.contact-btn:hover,
+
+.contact-btn:focus {
+
+  background-color: var(--kkb-text);
+
+  color: var(--kkb-bg);
+
+}
+
+
+/* ======================================
+
+   INTRO SCREEN
+
+====================================== */
+
+
+#intro-screen {
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 2rem;
+
+  background-color: var(--kkb-bg);
+
+  color: var(--kkb-text);
+
+  text-align: center;
+
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+
+}
+
+
+#intro-screen h1 {
+
+  margin: 0;
+
+  font-size: clamp(1.55rem, 7vw, 2rem);
+
+  font-weight: 600;
+
+  line-height: 1.16;
+
+  letter-spacing: 0;
+
+}
+
+
+#intro-screen.is-hidden {
+
+  opacity: 0;
+
+  visibility: hidden;
+
+}
+
+
+/* ======================================
+
+   HEADING SYSTEM
+
+====================================== */
+
+
+h1,
+
+.h1 {
+
+  font-weight: 300;
+
+}
+
+
+h2,
+
+.h2 {
+
+  font-size: 2rem;
+
+  font-weight: 400;
+
+  letter-spacing: 0;
+
+}
+
+
+h3,
+
+.h3 {
+
+  font-size: 1.25rem;
+
+  font-weight: 500;
+
+}
+
+
+h4,
+
+.h4 {
+
+  font-size: 0.9rem;
+
+  font-weight: 500;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+
+}
+
+
+/* ======================================
+
+   RESPONSIVE TYPOGRAPHY + LAYOUT
+
+====================================== */
+
+
+/* Small mobile: 300px - 575px */
+
+@media (max-width: 575.98px) {
+
+  .brand-hero {
+
+    min-height: 78vh;
+
+    padding: 4.25rem 1rem 2.5rem;
+
+  }
+
+
+  .hero-heading {
+
+    max-width: 20rem;
+
+  }
+
+
+  .hero-brand {
+
+    font-size: clamp(2.05rem, 12vw, 3rem);
+
+    line-height: 1.04;
+
+  }
+
+
+  .hero-tagline {
+
+    max-width: 18rem;
+
+    margin-top: 0.9rem;
+
+    font-size: 1rem;
+
+    line-height: 1.45;
+
+    font-weight: 400;
+
+  }
+
+
+  .contact-btn {
+
+    width: min(100%, 260px);
+
+    margin-top: 1.8rem;
+
+  }
+
+
+  .site-footer {
+
+    padding-top: 1rem !important;
+
+  }
+
+
+  .nav-link {
+
+    font-size: 0.76rem;
+
+  }
+
+}
+
+
+/* Large mobile: 576px - 767px */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  .brand-hero {
+
+    min-height: 80vh;
+
+    padding: 4.75rem 1.5rem 3rem;
+
+  }
+
+
+  .hero-brand {
+
+    font-size: 3.25rem;
+
+    line-height: 1.04;
+
+  }
+
+
+  .hero-tagline {
+
+    max-width: 27rem;
+
+    margin-top: 1rem;
+
+    font-size: 1.12rem;
+
+    line-height: 1.42;
+
+    font-weight: 400;
+
+  }
+
+
+  .contact-btn {
+
+    min-width: 190px;
+
+  }
+
+}
+
+
+/* Tablet: 768px - 991px */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  .brand-hero {
+
+    min-height: 82vh;
+
+    padding: 5rem 2rem 3rem;
+
+  }
+
+
+  .hero-brand {
+
+    font-size: 4.1rem;
+
+    line-height: 1.04;
+
+  }
+
+
+  .hero-tagline {
+
+    max-width: 34rem;
+
+    margin-top: 1rem;
+
+    font-size: 1.25rem;
+
+    line-height: 1.4;
+
+  }
+
+
+  .contact-btn {
+
+    min-width: 200px;
+
+  }
+
+}
+
+
+/* Desktop: 992px+ */
+
+@media (min-width: 992px) {
+
+  html {
+
+    scroll-behavior: smooth;
+
+    scroll-snap-type: y proximity;
+
+  }
+
+
+  .brand-hero {
+
+    min-height: 85vh;
+
+    padding: 5rem 2rem 3.5rem;
+
+  }
+
+
+  .hero-brand {
+
+    font-size: 3rem;
+
+    line-height: 1.12;
+
+  }
+
+
+  .hero-tagline {
+
+    margin-top: 0.55rem;
+
+    font-size: 3rem;
+
+    line-height: 1.12;
+
+  }
+
+
+  .snap-section {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    scroll-snap-align: start;
+
+  }
+
+
+  .hero-desktop {
+
+    background-color: var(--kkb-bg);
+
+  }
+
+
+  h2 {
+
+    font-size: 2.5rem;
+
+  }
+
+
+  h3 {
+
+    font-size: 1.5rem;
+
+  }
+
+}
+
+
+/* Large desktop: 1200px+ */
+
+@media (min-width: 1200px) {
+
+  .hero-brand,
+
+  .hero-tagline {
+
+    font-size: 3.5rem;
+
+  }
+
+}
