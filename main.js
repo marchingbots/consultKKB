@@ -1,41 +1,28 @@
-document.addEventListener("DOMContentLoaded", function() {
-
-  /* Intro Fade */
+document.addEventListener("DOMContentLoaded", () => {
   const intro = document.getElementById("intro-screen");
 
   if (intro) {
-    setTimeout(() => {
-      intro.style.opacity = "0";
-      setTimeout(() => intro.remove(), 1500);
-    }, 1500);
+    window.setTimeout(() => {
+      intro.classList.add("is-hidden");
+    }, 850);
+
+    window.setTimeout(() => {
+      intro.remove();
+    }, 1750);
   }
 
-  /* Hero Card Clicks */
-  document.querySelectorAll(".hero-card").forEach(card => {
-    card.addEventListener("click", function() {
-      window.location.href = this.dataset.href;
+  document.querySelectorAll(".hero-card[data-href]").forEach((card) => {
+    card.addEventListener("click", () => {
+      window.location.href = card.dataset.href;
     });
   });
 
-});
+  document.querySelectorAll("[data-user][data-domain][data-tld]").forEach((contactTrigger) => {
+    contactTrigger.addEventListener("click", (event) => {
+      event.preventDefault();
 
-
-
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const btn = document.querySelector(".contact-btn");
-
-    if (btn) {
-      btn.addEventListener("click", function () {
-        const user = this.dataset.user;
-        const domain = this.dataset.domain;
-        const tld = this.dataset.tld;
-
-        const email = user + "@" + domain + "." + tld;
-
-        const link = document.createElement("a");
-        link.href = "mailto:" + email;
-        link.click();
-      });
-    }
+      const { user, domain, tld } = contactTrigger.dataset;
+      window.location.href = `mailto:${user}@${domain}.${tld}`;
+    });
   });
+});
